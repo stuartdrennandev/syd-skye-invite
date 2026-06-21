@@ -6,8 +6,13 @@ function App() {
 
   if (!isOpen) {
     return (
-      <main className="page" onClick={() => setIsOpen(true)}>
-        <button type="button" className="envelope" aria-label="Open invitation">
+      <main className="page">
+        <button
+          type="button"
+          className="envelope"
+          aria-label="Open invitation"
+          onClick={() => setIsOpen(true)}
+        >
           <span className="envelope-flap" aria-hidden="true" />
           <span className="seal" aria-hidden="true">
             Open Me
